@@ -1,13 +1,27 @@
 venv1/
-*.pyc
-__pycache__/
-
+textclassifier.log*
 instance/
-
-.pytest_cache/
-.coverage
-htmlcov/
-
+# C extensions
+*.so
+# Packages
+*.egg-info/
+*.egg
+eggs
+develop-eggs
 dist/
 build/
-*.egg-info/
+.installed.cfg
+lib
+lib64
+__pycache__/
+.pytest_cache/
+*.pyc
+parts
+bin
+var
+sdist
+# Installer logs
+pip-log.txt
+# Unit test / coverage reports
+.coverage
+htmlcov/

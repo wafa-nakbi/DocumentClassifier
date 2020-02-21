@@ -58,3 +58,4 @@ def  getClass(text):
     pngImageB64String += base64.b64encode(pngImage.getvalue()).decode('utf8')
 
     return d[pred[0]],pngImageB64String
+
