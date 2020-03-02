@@ -1,8 +1,7 @@
 .alert-error {
-        width:200px;
-        height:30px;
+        width:250px;
+        height:20px;
         padding: 12px;
-        background-color: red;
-        color: white;
+        color: red;
         font-size: 1.2rem;
       }
