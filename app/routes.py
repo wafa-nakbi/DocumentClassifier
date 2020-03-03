@@ -47,7 +47,7 @@ def  getClass(text):
     wedges, texts, autotexts = ax1.pie(probs, autopct='%1.1f%%',textprops=dict(color="w"),startangle=0)
     ax1.axis('equal')
     ax1.legend(wedges, categories,
-              title="Categories",
+              title="Topics",
               loc="center right",
                bbox_to_anchor=(1, 0.5),bbox_transform=plt.gcf().transFigure
               )

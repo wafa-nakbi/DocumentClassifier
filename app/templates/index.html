@@ -2,7 +2,7 @@
 
 {% block content %}
     <div>
-        <h2>Text</h2>
+        <h2>News Article</h2>
         <form action="{{ url_for('index') }}" method="post">
         <textarea name="text" cols="50" rows="5"></textarea>
             <br/><br/>
@@ -17,7 +17,7 @@
 
     </div>
      <br>
-     <h2 >Category: </h2>
+     <h2 >Topic: </h2>
      <h2 style="color:#069">{{pred_class}}</h2>
 
     {% if plot  %}
