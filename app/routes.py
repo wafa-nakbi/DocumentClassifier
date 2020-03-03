@@ -43,10 +43,16 @@ def  getClass(text):
     #classes probabilities
     probs = np.exp(pb) / np.sum(np.exp(pb))
     #plot pie chart
-    fig1, ax1 = plt.subplots()
-    ax1.pie(probs, labels=categories, autopct='%1.1f%%',
-            shadow=True, startangle=90)
+    fig1, ax1 = plt.subplots(figsize=(6, 6))
+    wedges, texts, autotexts = ax1.pie(probs, autopct='%1.1f%%',textprops=dict(color="w"),startangle=0)
     ax1.axis('equal')
+    ax1.legend(wedges, categories,
+              title="Categories",
+              loc="center right",
+               bbox_to_anchor=(1, 0.5),bbox_transform=plt.gcf().transFigure
+              )
+    plt.setp(autotexts, size=8, weight="bold")
+    plt.subplots_adjust(top=1.,left=0.0, bottom=0.0, right=0.6)
     # convert plot to PNG image
     pngImage = io.BytesIO()
     FigureCanvas(fig1).print_png(pngImage)
